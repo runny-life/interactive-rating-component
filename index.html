@@ -2,8 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="./images/favicon-32x32.png"
+  >
   <title>Frontend Mentor | Interactive rating component</title>
   <link
     rel="stylesheet"
@@ -11,27 +19,96 @@
   >
 </head>
 <body>
-
-  <!-- Rating state start -->
-
-  How did we do?
-
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
-
-  1 2 3 4 5
-
-  Submit
-
-  <!-- Rating state end -->
-
+  <main>
+    <h1 class="visually-hidden">Interactive rating component</h1>
+    <article
+      class="rating"
+      aria-labelledby="rating-title"
+      aria-describedby="rating-description"
+    >
+      <div class="rating__icon-wrapper">
+        <svg
+          class="rating__icon"
+          width="17"
+          height="16"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+        >
+          <path
+            d="m9.067.43 1.99 4.031c.112.228.33.386.58.422l4.45.647a.772.772 0 0 1 .427 1.316l-3.22 3.138a.773.773 0 0 0-.222.683l.76 4.431a.772.772 0 0 1-1.12.813l-3.98-2.092a.773.773 0 0 0-.718 0l-3.98 2.092a.772.772 0 0 1-1.119-.813l.76-4.431a.77.77 0 0 0-.222-.683L.233 6.846A.772.772 0 0 1 .661 5.53l4.449-.647a.772.772 0 0 0 .58-.422L7.68.43a.774.774 0 0 1 1.387 0Z"
+            fill="#FC7614"
+          />
+        </svg>
+      </div>
+      <div class="rating__body">
+        <h2
+          class="rating__title"
+          id="rating-title"
+        >How did we do?
+        </h2>
+        <p
+          class="rating__description"
+          id="rating-description"
+        >Please let us know how we did with your support request. All feedback is appreciated
+          to help us improve our offering!
+        </p>
+        <ul class="rating__list">
+          <li class="rating__item">
+            <button
+              class="rating__button-check"
+              type="button"
+              aria-expanded="false"
+            >1
+            </button>
+          </li>
+          <li class="rating__item">
+            <button
+              class="rating__button-check"
+              type="button"
+              aria-expanded="false"
+            >2
+            </button>
+          </li>
+          <li class="rating__item">
+            <button
+              class="rating__button-check"
+              type="button"
+              aria-expanded="false"
+            >3
+            </button>
+          </li>
+          <li class="rating__item">
+            <button
+              class="rating__button-check"
+              type="button"
+              aria-expanded="false"
+            >4
+            </button>
+          </li>
+          <li class="rating__item">
+            <button
+              class="rating__button-check"
+              type="button"
+              aria-expanded="false"
+            >5
+            </button>
+          </li>
+        </ul>
+      </div>
+      <button
+        class="rating__button"
+        type="button"
+      >Submit
+      </button>
+    </article>
+  </main>
   <!-- Thank you state start -->
 
   You selected <!-- Add rating here --> out of 5
 
   Thank you!
 
-  We appreciate you taking the time to give a rating. If you ever need more support, 
+  We appreciate you taking the time to give a rating. If you ever need more support,
   don’t hesitate to get in touch!
 
   <!-- Thank you state end -->
