@@ -13,9 +13,19 @@
     href="./images/favicon-32x32.png"
   >
   <title>Frontend Mentor | Interactive rating component</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+  <link
+    href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet"
+  >
   <link
     rel="stylesheet"
     href="./css/index.css"
@@ -28,6 +38,7 @@
       class="rating"
       aria-labelledby="rating-title"
       aria-describedby="rating-description"
+      data-js-rating
     >
       <div class="rating__icon-wrapper">
         <svg
@@ -60,7 +71,8 @@
             <button
               class="rating__button-check"
               type="button"
-              aria-expanded="false"
+              aria-selected="false"
+              data-js-button-check
             >1
             </button>
           </li>
@@ -68,7 +80,8 @@
             <button
               class="rating__button-check"
               type="button"
-              aria-expanded="false"
+              aria-selected="false"
+              data-js-button-check
             >2
             </button>
           </li>
@@ -76,7 +89,8 @@
             <button
               class="rating__button-check"
               type="button"
-              aria-expanded="false"
+              aria-selected="false"
+              data-js-button-check
             >3
             </button>
           </li>
@@ -84,7 +98,8 @@
             <button
               class="rating__button-check"
               type="button"
-              aria-expanded="false"
+              aria-selected="false"
+              data-js-button-check
             >4
             </button>
           </li>
@@ -92,7 +107,8 @@
             <button
               class="rating__button-check"
               type="button"
-              aria-expanded="false"
+              aria-selected="false"
+              data-js-button-check
             >5
             </button>
           </li>
@@ -101,10 +117,14 @@
       <button
         class="rating__button"
         type="button"
+        data-js-button-submit
       >Submit
       </button>
     </article>
-    <article class="thank-you">
+    <article
+      class="thank-you"
+      data-js-thank-you
+    >
       <div class="thank-you__icon-wrapper">
         <svg
           class="thank-you__icon"
@@ -205,7 +225,7 @@
       <p
         class="thank-you__result"
         aria-live="polite"
-      >You selected <span>4</span> out of 5
+      >You selected <span data-js-result>4</span> out of 5
       </p>
       <div class="thank-you__body">
         <h2

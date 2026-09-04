@@ -134,7 +134,7 @@ button {
   outline-offset: 4px;
 }
 
-.rating__button-check[aria-expanded="true"] {
+.rating__button-check[aria-selected="true"] {
   color: var(--color-gray-900);
   background-color: var(--color-orange-500);
   pointer-events: none;
